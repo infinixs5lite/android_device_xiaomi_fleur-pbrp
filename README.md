@@ -1,4 +1,4 @@
-# TWRP Device Configuration for Poco M4 Pro 4g/Redmi Note 11s
+# PBRP Device Configuration for Poco M4 Pro 4g/Redmi Note 11s
 
 ## Device specifications
 
@@ -23,7 +23,7 @@
 
 ## Device picture
 
-![fleur/miel](https://github.com/ShazuxD/extras/raw/main/IMG/b09176f07d84e119623b4d218bfea455.png)
+![fleur/miel](https://github.com/MT6781/.github/raw/main/b09176f07d84e119623b4d218bfea455.png)
 
 # Status
 Current state of features (from [here](https://twrp.me/faq/OfficialMaintainer.html)):

@@ -162,3 +162,8 @@ TW_BACKUP_EXCLUSIONS := /data/fonts
 TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_CRYPTO_FBE := true
 TW_INCLUDE_FBE_METADATA_DECRYPT := true
+
+# PBRP
+PB_DISABLE_DEFAULT_DM_VERITY := true
+PB_TORCH_PATH := "/tmp/flash"		# fake path. Flash will not work
+
