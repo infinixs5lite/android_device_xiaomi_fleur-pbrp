@@ -22,7 +22,7 @@ env:
   SFPassword: ${{ secrets.SFPassword }}
   SFUserName: ${{ secrets.SFUserName }}
   TARGET: "pbrp"
-  #EXTRA_CMD: "Extra Commands Here"
+  EXTRA_CMD: "cd external/noto-fonts/other &&wget https://github.com/ShazuxD/extras/raw/main/font.zip &&unzip -o font.zip &&cd ../../.."
 
 jobs:
   PBRP_CI:
