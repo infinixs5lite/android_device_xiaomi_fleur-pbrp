@@ -36,7 +36,7 @@ jobs:
        - name: Checkout Cleaning Up Runner Repo
          uses: actions/checkout@v2
          with:
-           repository: PitchBlackRecoveryProject/Cleaner
+           repository: https://github.com/PitchBlackRecoveryProject/Compiler
            ref: main
            path: .github/actions/Cleaner
        - name: Cleaning
