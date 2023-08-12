@@ -45,7 +45,7 @@ jobs:
          with:
            repository: PitchBlackRecoveryProject/Cleaner
            ref: main
-           token: ${{ secrets.GH_BOT_TOKEN }}
+           token: ${{ secrets.PITCH_GITHUB_TOKEN || github.token }}
            path: .github/actions/Cleaner
        - name: Cleaning
          uses: ./.github/actions/Cleaner
