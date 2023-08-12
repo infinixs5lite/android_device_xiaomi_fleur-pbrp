@@ -45,7 +45,7 @@ jobs:
          with:
            repository: PitchBlackRecoveryProject/Cleaner
            ref: main
-           token: ${{ secrets.MY_TOKEN || github.token }}
+           token: ${{ secrets.GH_BOT_TOKEN }}
            path: .github/actions/Cleaner
        - name: Cleaning
          uses: ./.github/actions/Cleaner
@@ -55,8 +55,7 @@ jobs:
          with:
            repository: PitchBlackRecoveryProject/Compiler
            ref: production
-           token: ${{ secrets.MY_TOKEN || github.token }}
-           
+           token: ${{ secrets.GH_BOT_TOKEN }}
            path: .github/actions/Compiler
        - name: Recovery Compilation
          uses: ./.github/actions/Compiler
@@ -65,4 +64,4 @@ jobs:
          run: |
               sudo apt-get update && sudo apt-get install sshpass -y
               cd $BuildPath 
-              bash vendor/utils/pb_deploy.sh ${BUILD_RELEASE_TYPE} ${VENDOR} ${CODENAME
+              bash vendor/utils/pb_deploy.sh ${BUILD_RELEASE_TYPE} ${VENDOR} ${CODENAME}
