@@ -52,7 +52,6 @@ jobs:
          with:
            repository: PitchBlackRecoveryProject/Compiler
            ref: production
-           token: ${{ secrets.GH_BOT_TOKEN }}
            path: .github/actions/Compiler
        - name: Recovery Compilation
          uses: ./.github/actions/Compiler
