@@ -49,7 +49,7 @@ jobs:
        - name: Checkout Recovery Compiler Repo
          uses: actions/checkout@v2
          with:
-           repository: PitchBlackRecoveryProject/Compiler
+           repository: https://github.com/users/infinixs5lite/projects/Compiler
            ref: production
            path: .github/actions/Compiler
        - name: Recovery Compilation
