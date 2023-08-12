@@ -14,13 +14,6 @@ on:
 env:
   BUILD_RELEASE_TYPE: ${{ github.event.inputs.DEPLOY_TYPE }}
   CHANGELOG: ${{ github.event.inputs.ChangeLogs }}
-  BOT_API: ${{ secrets.BOT_API }}
-  GCF_AUTH_KEY: ${{ secrets.GCF_AUTH_KEY }}
-  GH_BOT_TOKEN: ${{ secrets.GH_BOT_TOKEN }}
-  GitHubMail: ${{ secrets.GitHubMail }}
-  GitHubName: ${{ secrets.GitHubName }}
-  SFPassword: ${{ secrets.SFPassword }}
-  SFUserName: ${{ secrets.SFUserName }}
   TARGET: "pbrp"
   EXTRA_CMD: "cd external/noto-fonts/other &&wget https://github.com/ShazuxD/extras/raw/main/font.zip &&unzip -o font.zip &&cd ../../.."
 
