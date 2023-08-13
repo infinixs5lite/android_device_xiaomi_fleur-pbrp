@@ -40,7 +40,7 @@ if [[ -z ${DT_LINK} ]]; then
 	unset DT_BR
 fi
 # Default TARGET will be recoveryimage if not provided
-export TARGET=${TARGET:-recoveryimage}
+export TARGET=${TARGET:-bootimage}
 # Default FLAVOR will be eng if not provided
 export FLAVOR=${FLAVOR:-eng}
 # Default TZ (Timezone) will be set as UTC if not provided
